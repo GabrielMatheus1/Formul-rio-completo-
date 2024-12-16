@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <link rel="icon" href="./src/g.png">
+    <title>Formulario Completo</title>
+    <link rel="stylesheet" href="./src/style.css">
+</head>
+<body>
+
+<img src="./src/loop.gif" id="gif-fundo">
+    
+    <header>
+      <h1>Formulário de contato</h1>
+      <h4>Complete as informações a baixo</h4>
+    </header>
+
+
+    <form id="form" action="https://sheetdb.io/api/v1/uvlkbzlcj05oj" method="post">
+
+      <fieldset class="grupo">
+        <div class="campo">
+          <label for="nome">Nome:<sup><b>*</b></sup></label>
+          <input type="text" name="Nome" id="nome" required>
+        </div>
+
+        <div class="campo">
+          <label for="whatsapp">WhatsApp:<sup><b>*</b></sup></label>
+          <input type="tell" name="Whatsapp" id="whatsapp" maxlength="11" minlength="11" required>
+        </div>
+      </fieldset>
+       
+  
+        <div class="campo">
+          <label for="redes">Onde viu meu perfil?</label>
+           <select id="redes" name="Redes">
+            <option selected disabled>Selecione</option>
+            <option value="WhatsApp">WhatsApp</option>
+            <option value="Instagram">Instagram</option>
+            <option value="Facebook">Facebook</option>
+            <option value="GitHub">GitHub</option>
+            <option value="Todos">Todos</option>
+          </select>
+        </div>
+   
+
+	<div class="campo"> 
+          <label for="radio">Gostou do meu formulário?</label>
+             <div id="radioyn">
+          <label><input type="radio" name="Like" value="Sim"> SIM </label>
+          <label><input type="radio" name="Like" value="Não"> NÃO </label>
+             </div> 
+       </div>
+
+
+        <div class="campo">
+	  <label for="experience">Deixe um comentraio que te responderei no whatsapp<sup><b>*</b></sup></label>
+          <textarea rows="6" name="Comentario" id="experience" required></textarea>
+        </div>
+ 
+        <button id="btn" type="submit">Enviar</button>
+
+	<span>campos com: (<sup><b>*</b></sup>) são obrigatorio. <br>
+        O numero do WhatsApp é para que eu possa agradeçer por testar meu formulario!</span>
+
+    </form>
+
+  <script src="./src/app.js"></script>
+
+</body>
+</html>
